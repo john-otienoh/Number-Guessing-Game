@@ -7,31 +7,36 @@ A simple number guessing game where the computer randomly selects a number and t
 ```graphql
 number-guessing-game/
 ├── main.go
-├── game/
-│   ├── game.go
-│   ├── difficulty.go
-│   └── highscore.go
+|
+├── go.mod
+|
+├── README.md
+|
 ├── utils/
-│   ├── input.go
-│   └── timer.go
-└── storage/
-    └── scores.go
+│   ├── utils.go
+│   └── utils_test.go
 ```
 
 ## Requirements
 
-It is a CLI-based game, so you need to use the command line to interact with the game. The game should work as follows:</br>
-When the game starts, it should display a welcome message along with the rules of the game.</br>
-The computer should randomly select a number between 1 and 100.</br>
-User should select the difficulty level (easy, medium, hard) which will determine the number of chances they get to guess the number.</br>
-The user should be able to enter their guess.</br>
-If the user's guess is correct, the game should display a congratulatory message along with the number of attempts it took to guess the number.</br>
-If the user's guess is incorrect, the game should display a message indicating whether the number is greater or less than the user's guess.</br>
-The game should end when the user guesses the correct number or runs out of chances.</br>
+It is a CLI-based game, so you need to use the command line to interact with the game. The game should work as follows:
+
+- When the game starts, it should display a welcome message along with the rules of the game.
+- The computer should randomly select a number between 1 and 100.
+- User should select the difficulty level (easy, medium, hard) which will determine the number of chances they get to guess the number.
+- The user should be able to enter their guess.
+- If the user's guess is correct, the game should display a congratulatory message along with the number of attempts it took to guess the number.
+- If the user's guess is incorrect, the game should display a message indicating whether the number is greater or less than the user's guess.
+- The game should end when the user guesses the correct number or runs out of chances.
 
 ## Output
 
-Here is a sample output of the game:
+Here is a sample output of the game:</br>
+Run
+
+```bash
+./guessit
+```
 
 ```plaintext
 Welcome to the Number Guessing Game!
@@ -64,11 +69,12 @@ Congratulations! You guessed the correct number in 4 attempts.
 ## Upcoming features
 
 To make the game more interesting, you can add the following features:
-[*] Allow the user to play multiple rounds of the game (i.e., keep playing until the user decides to quit). You can do this by asking the user if they want to play again after each round.
+[] Allow the user to play multiple rounds of the game (i.e., keep playing until the user decides to quit). You can do this by asking the user if they want to play again after each round.
 [*] Add a timer to see how long it takes the user to guess the number.
 [] Implement a hint system that provides clues to the user if they are stuck.
 [] Keep track of the user's high score (i.e., the fewest number of attempts it took to guess the number under a specific difficulty level).
+</br>
 [Number Guessing game link](https://roadmap.sh/projects/number-guessing-game)
 </br>
-[My solution submision link](https://roadmap.sh/projects/number-guessing-game/solutions?u=6724c2b131d65c235d088343)
+[My solution submision link](https://roadmap.sh/projects/number-guessing-game/solutions?u=6724c2b131d65c235d088343)</br>
 Happy coding!
